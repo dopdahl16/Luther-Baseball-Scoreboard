@@ -1,0 +1,110 @@
+Recomendation for only the 1-10 inning part:
+{'0': 20, '1': 9, '2': 5, '3': 5, '4': 3, '5': 3, '6': 2, '7': 2, '8': 1, '9': 1}
+
+
+
+
+
+
+Being SAFE:
+{'0': 26, '1': 19, '2': 15, '3': 11, '4': 9, '5': 9, '6': 8, '7': 8, '8': 7, '9': 7}
+	total: 119     @$5/per: 595
+
+
+Highly unlikely you'll get burned:
+{'0': 25, '1': 13, '2': 9, '3': 9, '4': 7, '5': 7, '6': 6, '7': 5, '8': 4, '9': 3}
+	total: 88      @$5/per: 440
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***Likelihood of numbers in RHE occuring at the same time?
+***Relationship between Hits and runs digits. E.g., what do 6 hits usually give in runs? Or if we get 13 hits, do we have 3 runs and therefore do we need
+	another 3? What is the likelihood of needing the same digit for runs and hits?
+***Putting digits on back of other digits
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------
+Games Back Part:
+
+9 teams in Conference
+
+min - 1
+max - 17, but I recommend getting up to 20
+avg - 7.958333
+mode - 6
+
+I recommend getting 6 (1/2)'s
+
+
+
+
+
+0 : 0
+1 : 2
+2 : 5
+3 : 4
+4 : 5
+5 : 4
+6 : 7
+7 : 4
+8 : 3
+9 : 4
+10 : 3
+11 : 3
+12 : 5
+13 : 5
+14 : 2
+15 : 1
+16 : 1
+17 : 2
+
