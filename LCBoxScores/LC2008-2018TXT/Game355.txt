@@ -1,0 +1,4 @@
+<pre>Score by Innings                    R  H  E
+-------------------------------------------
+Simpson College..... 100 001 000 -  2  4  5
+Luther College...... 040 010 05X - 10 14  2
