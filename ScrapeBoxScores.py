@@ -1,22 +1,27 @@
 from selenium import webdriver
 
-LC20062007URLs = f = open("C:\\Users\\dopda\\Desktop\\LCBoxScores\\LC20062007URLs.txt", "r")
-for i in LC20062007URLs:
-    print("'" + i.rstrip() + "'")
+LC20062007URLs = File = open("\\path\\to\\LCBoxScores\\LC20062007URLs.txt", "r")
+
+for URL in LC20062007URLs:
+    print("'" + URL.rstrip() + "'")
     print("___")
 
-LC20082018URLs = f = open("C:\\Users\\dopda\\Desktop\\LCBoxScores\\LC20082018URLs.txt", "r")
-count = 80 #games in 2006 and 2007 total 80 games
-for i in LC20082018URLs:
-    count += 1
+LC20082018URLs = File = open("\\path\\to\\LCBoxScores\\LC20082018URLs.txt", "r")
+
+### games in 2006 and 2007 total 80 games
+
+GameCount = 80 
+
+for URL in LC20082018URLs:
+    GameCount += 1
+    driver = webdriver.Chrome("\\path\\to\\chromedriver.exe")
+    driver.get(URL.rstrip())
     
-    driver = webdriver.Chrome("C:\\Users\\dopda\\Desktop\\scoreboard\\Luther_Baseball_Scoreboard\\chromedriver.exe")
-    driver.get(i.rstrip())
-    with open("C:\\Users\\dopda\\Desktop\\LCBoxScores\\Game"+str(count), "w") as f:
-        f.write(driver.page_source)
-    f.close()
+    with open("\\path\\to\\LCBoxScores\\Game"+str(GameCount), "w") as File:
+        File.write(driver.page_source)
+    File.close()
     
-    print("'" + i.rstrip() + "'")
+    print("'" + URL.rstrip() + "'")
     print("___")
-    print(count)
+    print(GameCount)
 

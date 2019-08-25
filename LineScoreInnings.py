@@ -2,7 +2,7 @@ import os
 
 lst_of_inning_box_scores = []
 
-for file in os.listdir("C:\\Users\\dopda\\Desktop\\LCBoxScores\\LC2008-2018TXT"):
+for file in os.listdir("\\path\\to\\LCBoxScores\\LC2008-2018TXT"):
     filename = file[:-4]
     print()
     print()
@@ -10,13 +10,9 @@ for file in os.listdir("C:\\Users\\dopda\\Desktop\\LCBoxScores\\LC2008-2018TXT")
     
     ###GAME 249 - use "." as trigger to start reading in numbers for box score
     
-    box_score = open("C:\\Users\\dopda\\Desktop\\LCBoxScores\\LC2008-2018TXT\\"+file, "r")
-    #box_score = open("C:\\Users\\dopda\\Desktop\\LCBoxScores\\LC2008-2018TXT\\"+"Game195.txt", "r")
-    
+    box_score = open("\\path\\to\\LCBoxScores\\LC2008-2018TXT\\"+file, "r")
     print("BOXSCORE:")
-    
     Full_Box = []
-    
     line_count = 0
     do_not_load_next_digit = False
     
@@ -32,19 +28,13 @@ for file in os.listdir("C:\\Users\\dopda\\Desktop\\LCBoxScores\\LC2008-2018TXT")
                     do_not_load_next_digit = True
                 else:
                     do_not_load_next_digit = False
-    
-                
+
         line_count += 1
         
     print("FULL BOX: ", Full_Box)
     lst_of_inning_box_scores.append(Full_Box)
         
-        
-
 print("FINAL: " , lst_of_inning_box_scores)
-
-
-
 
 #part 2
 
@@ -63,13 +53,11 @@ for game in lst_of_inning_box_scores:
         if temp_dict[digit] > max_dict[digit]:
             max_dict[digit] = temp_dict[digit]
    
-        
-
 print("Count Dict" , count_dict)
-
 avg_dict = count_dict.copy()
 
 for digit in avg_dict:
     avg_dict[digit] = avg_dict[digit]/462
+    
 print("AVG: ", avg_dict)
 print("MAX DICT : ", max_dict)

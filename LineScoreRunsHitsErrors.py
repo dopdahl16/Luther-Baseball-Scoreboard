@@ -2,7 +2,7 @@ import os
 
 lst_of_RHE = []
 
-for file in os.listdir("C:\\Users\\dopda\\Desktop\\LCBoxScores\\LC2008-2018TXT"):
+for file in os.listdir("\\path\\to\\LCBoxScores\\LC2008-2018TXT"):
     filename = file[:-4]
     print()
     print()
@@ -10,11 +10,8 @@ for file in os.listdir("C:\\Users\\dopda\\Desktop\\LCBoxScores\\LC2008-2018TXT")
     
     ###GAME 249 - use "." as trigger to start reading in numbers for box score
     
-    box_score = open("C:\\Users\\dopda\\Desktop\\LCBoxScores\\LC2008-2018TXT\\"+file, "r")
-    
+    box_score = open("\\path\\to\\LCBoxScores\\LC2008-2018TXT\\"+file, "r")
     line_count = 0
-    
-    
     
     for i in box_score:
         RHE1 = ""
@@ -28,11 +25,9 @@ for file in os.listdir("C:\\Users\\dopda\\Desktop\\LCBoxScores\\LC2008-2018TXT")
             RHE2 = i[split_idx + 1:]
             lst_of_RHE.append(RHE2.split())
                     
-                
         line_count += 1
         
 print(lst_of_RHE)
-
 lst_of_final_RHEs_to_be_removed = []
 
 for final_RHE in lst_of_RHE:
@@ -58,15 +53,10 @@ hit_total = 0
 error_endgame_digit_total_dict = {'0':0, '1':0, '2':0, '3':0, '4':0, '5':0, '6':0, '7':0, '8':0, '9':0}
 error_max = 0
 error_total = 0
-
 print()
 print()
-
-
-
 
 for game in lst_of_RHE:
-    
     for digit in game[0]:
         run_digit_total_dict[digit] += 1
     
@@ -74,8 +64,6 @@ for game in lst_of_RHE:
         run_max = int(game[0])
         
     run_total += int(game[0])
-    
-    
     
     for digit in game[1]:
         hit_endgame_digit_total_dict[digit] += 1
@@ -85,9 +73,7 @@ for game in lst_of_RHE:
     if int(game[1]) > hit_max:
         hit_max = int(game[1])
         
-    hit_total += int(game[1])  
-        
-        
+    hit_total += int(game[1])
         
     for digit in game[2]:
         error_endgame_digit_total_dict[digit] += 1
@@ -96,7 +82,6 @@ for game in lst_of_RHE:
         error_max = int(game[2])
         
     error_total += int(game[2])        
-    
     
 print("Run Data:")
 print(run_digit_total_dict)
@@ -114,12 +99,6 @@ print(error_endgame_digit_total_dict)
 print("Max: ", error_max)
 print("Total: ", error_total)
 print()
-
-
-
-
-
-
 hit_digit_total_dict = {'0':0, '1':0, '2':0, '3':0, '4':0, '5':0, '6':0, '7':0, '8':0, '9':0}
 
 for number in hit_num_total_dict:
@@ -129,9 +108,6 @@ for number in hit_num_total_dict:
 
 print(hit_digit_total_dict)
 
-
-
-
 error_digit_total_dict = {'0':0, '1':0, '2':0, '3':0, '4':0, '5':0, '6':0, '7':0, '8':0, '9':0}
 
 for number in error_endgame_digit_total_dict:
@@ -140,10 +116,6 @@ for number in error_endgame_digit_total_dict:
             error_digit_total_dict[digit] += error_endgame_digit_total_dict[number]
             
 print(error_digit_total_dict)
-
-
-
-
 
 
 """
