@@ -4,7 +4,7 @@
 
 import os
 
-for BoxScore in os.listdir("\\path\\to\\LCBoxScores"):
-    print(BoxScore)
-    os.rename("\\path\\to\\LCBoxScores\\"+BoxScore, "\\path\\to\\LCBoxScores\\"+BoxScore+".html")
+for box_score in os.listdir("\\path\\to\\LCBoxScores"):
+    print(box_score)
+    os.rename("\\path\\to\\LCBoxScores\\"+box_score, "\\path\\to\\LCBoxScores\\"+box_score+".html")
     
