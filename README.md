@@ -5,6 +5,10 @@ Luther College baseball head coach Bryan Nikel commissioned a new scoreboard for
 
 Please, contact me at dopdahl16@gmail.com with any questions. I had fun doing this (admittedly rushed) analysis and am always looking for feedback.
 
+Legal notice: I do not claim to own or have created chromedriver.exe. chromedriver.exe exists here as a courtesy to the user. ChromeDriver, of which chromedriver.exe is a part, is currently in the open source Chromium project. This project is developed by members of the Chromium and WebDriver teams. Find more information here: https://chromedriver.chromium.org/home
+
+Unless otherwise explicitly stated (such as in the above paragraph), all files in this repository are the sole property of me, Daniel Opdahl.
+
 ## Development notes on the project
 
 My approach to finding out the minimum number of plates of each digit were needed to operate the scoreboard started with a few realizations:
@@ -27,7 +31,7 @@ Then, I converted the box scores in .html format to line scores in .txt format. 
 
 
 *//TODO//* rename variables, clean up code, adjust indentation, etc. in LineScoreInnings.py and LineScoreRunsHitsErrors.py, and also write what they do in this file, in the same vein as the above paragraphs.
-*//TODO//* delete comments to self in the results document as well as at the bottom of LineScoreRunsHitsErrors.py and put them in the appropriate place (probably in the below Things I wish I had done differently section). 
+*//TODO//* delete comments to self in the results document as well as at the bottom of LineScoreRunsHitsErrors.py and put them in the appropriate place (probably in the below Things I wish I had done differently section).
 
 
 
